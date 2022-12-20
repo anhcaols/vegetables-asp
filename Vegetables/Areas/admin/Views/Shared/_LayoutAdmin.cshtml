@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
+
+    <!-- loader-->
+    <link href="~/Areas/admin/content/css/pace.min.css" rel="stylesheet" />
+    <script src="~/Areas/admin/script/js/pace.min.js"></script>
+    <!--favicon-->
+    <link rel="icon" href="~/Areas/admin/content/images/favicon.ico" type="image/x-icon">
+    <!-- Vector CSS -->
+    @*<link href="~/Areas/admin/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />*@
+    <!-- simplebar CSS-->
+    <link href="~/Areas/admin/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+    <link href="~/Areas/admin/content/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="~/Areas/admin/content/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="~/Areas/admin/content/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="~/Areas/admin/content/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="~/Areas/admin/content/css/app-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/css/font.awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="~/Scripts/jquery-3.6.0.min.js"></script>
+
+    <link href="~/Areas/admin/content/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-theme bg-theme1">
+
+    <!-- Start wrapper-->
+    <div id="wrapper">
+
+        <!--Start sidebar-wrapper-->
+        @Html.Partial("_SidebarAdmin")
+        <!--End sidebar-wrapper-->
+        <!--Start topbar header-->
+        @Html.Partial("_HeaderAdmin")
+        <!--End topbar header-->
+
+        <div class="clearfix"></div>
+
+        <div class="content-wrapper" id="content-main">
+            @RenderBody()
+        </div>
+
+        <!--Start footer-->
+        @Html.Partial("_FooterAdmin")
+        <!--End footer-->
+        <!--start color switcher-->
+        @Html.Partial("_RightSidebarAdmin")
+        <!--end color switcher-->
+
+    </div><!--End wrapper-->
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Areas/admin/script/js/jquery.min.js"></script>
+    <script src="~/Areas/admin/script/js/popper.min.js"></script>
+    <script src="~/Areas/admin/script/js/bootstrap.min.js"></script>
+
+    <!-- simplebar js -->
+    <script src="~/Areas/admin/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="~/Areas/admin/script/js/sidebar-menu.js"></script>
+    <!-- loader scripts -->
+    @*<script src="~/Areas/admin/script/js/jquery.loading-indicator.js"></script>*@
+    <!-- Custom scripts -->
+    <script src="~/Areas/admin/script/js/app-script.js"></script>
+    <!-- Chart js -->
+    <script src="~/Areas/admin/plugins/Chart.js/Chart.min.js"></script>
+    <!-- Index js -->
+    <script src="~/Areas/admin/script/js/index.js"></script>
+    @*<script src="~/Areas/admin/script/js/main.js"></script>*@
+  
+</body>
+</html>
