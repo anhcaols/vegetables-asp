@@ -1,21 +1,14 @@
 ﻿
 
 <style>
-    .edit-btn {
-        margin-right: 10px;
-        cursor: pointer;
-    }
 
-    .delete-btn {
-        cursor: pointer;
-    }
 </style>
 
 <script>
 
 </script>
 <div class="bg-light rounded h-100 p-4">
-    <h6 class="mb-4" style="font-size: 20px;">Sản Phẩm</h6>
+    <h6 class="mb-4" style="font-size: 20px;">Products</h6>
     <div class="table-responsive">
         <i class="btn-action kh fa fa-plus bg-success mt-4" per="0" id="0"></i>
         <table class="table">
@@ -29,6 +22,17 @@
                     <th scope="col">Price</th>
                     <th scope="col">Description</th>
                     <th scope="col">Action</th>
+
+                </tr>
+                <tr>
+                    <td scope="col">1</td>
+                    <td scope="col">Apple</td>
+                    <td scope="col">fruit</td>
+                    <td scope="col">Cao Anh</td>
+                    <td scope="col">10</td>
+                    <td scope="col">120.000</td>
+                    <td scope="col">Good</td>
+                    <td scope="col"><i class='fa fa-edit edit-product mr-1'></i> <i class='fa fa-trash delete-product'></i></td>
 
                 </tr>
             </thead>
@@ -45,7 +49,6 @@
         <button type="button" class="btn-openmodal" data-toggle="modal" data-target="#khachhang-modal" hidden>
         </button>
 
-        @*Modal
             <div class="modal fade" id="khachhang-modal" tabindex="-1" role="dialog" aria-labelledby="khachhang-modal" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -94,6 +97,6 @@
                         </div>
                     </div>
                 </div>
-            </div>*@
+            </div>
     </div>
 </div>

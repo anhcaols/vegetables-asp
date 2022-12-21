@@ -872,7 +872,7 @@
     <Content Include="Areas\admin\content\fonts\weathericons-regular-webfont.woff2" />
     <Content Include="Areas\admin\Views\HomeAdmin\Index.cshtml" />
     <Content Include="Areas\admin\Views\Shared\_LoginAdmin.cshtml" />
-    <Content Include="Areas\admin\Views\Shared\_DonDatAdmin.cshtml" />
+    <Content Include="Areas\admin\Views\Shared\_OrderAdmin.cshtml" />
     <Content Include="Areas\admin\Views\Shared\_ProductAdmin.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

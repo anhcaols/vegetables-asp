@@ -86,7 +86,7 @@ namespace Vegetables.Areas.admin.Controllers
         public ActionResult Order()
         {
             Vegetables_DBContext db = new Vegetables_DBContext();
-            return PartialView("_DonDatAdmin", (int)Math.Ceiling((double)db.DonDats.ToList().Count / 10));
+            return PartialView("_OrderAdmin", (int)Math.Ceiling((double)db.DonDats.ToList().Count / 10));
 
         }
 

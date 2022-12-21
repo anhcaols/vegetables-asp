@@ -1,69 +1,72 @@
 ﻿  
   @*tạo hóa đơn*@
   <div class="bg-light rounded h-100 p-4">
-        <h6 class="mb-4 text-center" style="font-size: 24px;">Order</h6>
+        <h6 class="mb-4 text-center" style="font-size: 26px;">Orders</h6>
         <div class="add-order">
-            <h5 class="mt-3">Customer info</h5>
+            <h5 class="mt-3">CUSTOMER INFO</h5>
             <div class="d-flex flex-wrap">
                 <div class="form-group w-50 pr-4">
-                    <label for="exampleFormControlSelect1">Customer</label>
+                    <label >Customer</label>
                     <select class="form-control" id="customer-list">
+                        <option>------</option>
                         <option>Anh</option>
                         <option>Anh</option>
                     </select>
                 </div>
                 <div class="form-group w-50">
-                    <label for="exampleFormControlInput1">Address</label>
-                    <input type="email" class="form-control" id="address-customer" placeholder="Address">
+                    <label >Address</label>
+                    <input type="email" class="form-control" id="address-customer" placeholder="address">
                 </div>
                 <div class="form-group w-50 pr-4">
-                    <label for="exampleFormControlInput1">Phone number</label>
-                    <input type="email" class="form-control" id="phone-customer" placeholder="Phone">
+                    <label >Phone number</label>
+                    <input type="email" class="form-control" id="phone-customer" placeholder="phone">
                 </div>
                 <div class="form-group w-50">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="email-customer" placeholder="caoanh@example.com">
+                    <label >Email address</label>
+                    <input type="email" class="form-control" id="email-customer" placeholder="caoanh@gmail.com">
                 </div>
                 <div class="form-group w-50 pr-4">
-                    <label for="exampleFormControlSelect1">Staff</label>
+                    <label >Staff</label>
                     <select class="form-control" id="staff-list">
+                        <option>------</option>
                         <option>Anh</option>
                         <option>Anh</option>
                     </select>
                 </div>
             </div>
 
-            <h5 class="mt-3">Order Detail</h5>
+            <h5 class="mt-4">ORDER DETAIL</h5>
             <div class="d-flex flex-wrap">
                 <div class="form-group   w-50 pr-4">
-                    <label for="exampleFormControlSelect1">Product name</label>
+                    <label >Product name</label>
                     <select class="form-control" id="product-list">
+                        <option>------</option>
                         <option>Apple</option>
                         <option>Orange</option>
                     </select>
                 </div>
                 <div class="form-group  w-50">
-                    <label for="exampleFormControlInput1">Quantity</label>
-                    <input type="text" class="form-control" id="quantity-product" placeholder="Quantity">
+                    <label >Quantity</label>
+                    <input type="text" class="form-control" id="quantity-product" placeholder="quantity">
                 </div>
                 <div class="form-group  w-50 pr-4">
-                    <label for="exampleFormControlInput1">Price</label>
-                    <input type="text" class="form-control" id="price-product" placeholder="Price">
+                    <label>Price</label>
+                    <input type="text" class="form-control" id="price-product" placeholder="price">
                 </div>
                 <div class="form-group pmd-textfield pmd-textfield-floating-label w-50">
-                    <label class="control-label" for="datetimepicker-default">Order day</label>
+                    <label >Order day</label>
                     <input type="date" id="datetimepicker-default" class="form-control" />
                 </div>
                 <div class="form-group  w-50 pr-4" >
-                    <label for="exampleFormControlInput1">Expiry(day)</label>
-                    <input type="text" class="form-control" id="expiry-product" placeholder="Expiry">
+                    <label >Expiry(day)</label>
+                    <input type="text" class="form-control" id="expiry-product" placeholder="expiry">
                 </div>
             </div>
-            <button type="button" class="btn btn-primary add-btn">Add</button>
+            <button type="button" class="btn btn-info add-product-order">Add</button>
         </div>
 
         <div class="table-responsive mt-4">
-            <table class="table">
+            <table class="table mt-4" >
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
@@ -73,12 +76,24 @@
                         <th scope="col">Order day</th>
                         <th scope="col">Total unit price</th>
                         <th scope="col">Expiry</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col">Apple</td>
+                        <td scope="col">10</td>
+                        <td scope="col">120.000</td>
+                        <td scope="col">12/12/2022</td>
+                        <td scope="col">1.200.000</td>
+                        <td scope="col">7</td>
+                        <td scope="col"><i class='fa fa-trash delete-product-order'></i></td>
+
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
-            <button type="button" class="btn btn-primary save-btn">Save</button>
+            <button type="button" class="btn btn-info save-product-order">Save</button>
         </div>
     </div>
 
@@ -90,6 +105,12 @@
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    <tr>
+                        <td scope="col">1</td>
+                        <td scope="col"><i class='fa fa-trash delete-order'></i></td>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -99,7 +120,7 @@
                 <div class="btn btn-primary btn-paging-kh" id="btn-active" style="background-color:black">1</div>
                 @for (int i = 2; i <= (int)Model; i++)
                 {
-                    <div class="btn btn-primary btn-paging-kh">@i</div>
+                    <div class="btn btn-info btn-paging-kh">@i</div>
                 }
             </div>
         </div>
