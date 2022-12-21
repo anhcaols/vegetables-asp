@@ -1,0 +1,107 @@
+﻿  
+  @*tạo hóa đơn*@
+  <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4 text-center" style="font-size: 24px;">Order</h6>
+        <div class="add-order">
+            <h5 class="mt-3">Customer info</h5>
+            <div class="d-flex flex-wrap">
+                <div class="form-group w-50 pr-4">
+                    <label for="exampleFormControlSelect1">Customer</label>
+                    <select class="form-control" id="customer-list">
+                        <option>Anh</option>
+                        <option>Anh</option>
+                    </select>
+                </div>
+                <div class="form-group w-50">
+                    <label for="exampleFormControlInput1">Address</label>
+                    <input type="email" class="form-control" id="address-customer" placeholder="Address">
+                </div>
+                <div class="form-group w-50 pr-4">
+                    <label for="exampleFormControlInput1">Phone number</label>
+                    <input type="email" class="form-control" id="phone-customer" placeholder="Phone">
+                </div>
+                <div class="form-group w-50">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="email-customer" placeholder="caoanh@example.com">
+                </div>
+                <div class="form-group w-50 pr-4">
+                    <label for="exampleFormControlSelect1">Staff</label>
+                    <select class="form-control" id="staff-list">
+                        <option>Anh</option>
+                        <option>Anh</option>
+                    </select>
+                </div>
+            </div>
+
+            <h5 class="mt-3">Order Detail</h5>
+            <div class="d-flex flex-wrap">
+                <div class="form-group   w-50 pr-4">
+                    <label for="exampleFormControlSelect1">Product name</label>
+                    <select class="form-control" id="product-list">
+                        <option>Apple</option>
+                        <option>Orange</option>
+                    </select>
+                </div>
+                <div class="form-group  w-50">
+                    <label for="exampleFormControlInput1">Quantity</label>
+                    <input type="text" class="form-control" id="quantity-product" placeholder="Quantity">
+                </div>
+                <div class="form-group  w-50 pr-4">
+                    <label for="exampleFormControlInput1">Price</label>
+                    <input type="text" class="form-control" id="price-product" placeholder="Price">
+                </div>
+                <div class="form-group pmd-textfield pmd-textfield-floating-label w-50">
+                    <label class="control-label" for="datetimepicker-default">Order day</label>
+                    <input type="date" id="datetimepicker-default" class="form-control" />
+                </div>
+                <div class="form-group  w-50 pr-4" >
+                    <label for="exampleFormControlInput1">Expiry(day)</label>
+                    <input type="text" class="form-control" id="expiry-product" placeholder="Expiry">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary add-btn">Add</button>
+        </div>
+
+        <div class="table-responsive mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Product name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Order day</th>
+                        <th scope="col">Total unit price</th>
+                        <th scope="col">Expiry</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary save-btn">Save</button>
+        </div>
+    </div>
+
+    @*danh sách hóa đơn*@
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4 text-center" style="font-size: 24px;">Order List</h6>
+        <div class="table-responsive mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="paging-kh">
+                <div class="btn btn-primary btn-paging-kh" id="btn-active" style="background-color:black">1</div>
+                @for (int i = 2; i <= (int)Model; i++)
+                {
+                    <div class="btn btn-primary btn-paging-kh">@i</div>
+                }
+            </div>
+        </div>
+    </div>
+

@@ -31,33 +31,17 @@
                     <th scope="col">Action</th>
 
                 </tr>
-
-               
-                    <tr>
-                        <td>MaSP</td>
-                        <td>TenSP</td>
-                        <td>MaLoaiSP</td>
-                        <td>MaTH</td>
-                        <td>SoLuong</td>
-                        <td>DonGia</td>
-                        <td>MoTa</td>
-                        <td>
-                            <i class='fa fa-edit edit-btn'></i>
-                            <i class='fa-solid fa-trash delete-btn'></i>
-                        </td>
-                    </tr>
-                
             </thead>
             <tbody>
             </tbody>
         </table>
-        <!--<div id="paging-kh">
-            <div class="btn btn-primary btn-paging-kh" id="btn-active" style="background-color:black">1</div>-->
-        @*@for (int i = 2; i <= (int)Model; i++)
+        <div id="paging-kh">
+            <div class="btn btn-primary btn-paging-kh" id="btn-active" style="background-color:black">1</div>
+        @for (int i = 2; i <= (int)Model; i++)
             {
                 <div class="btn btn-primary btn-paging-kh">@i</div>
-            }*@
-        <!--</div>-->
+            }
+        </div>
         <button type="button" class="btn-openmodal" data-toggle="modal" data-target="#khachhang-modal" hidden>
         </button>
 
